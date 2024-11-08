@@ -9,5 +9,5 @@ This repository contains a few scripts that I use frequently to change sequence 
 
 _Note: the name_file needs to be a tab delimited file with 1st column containing old names and 2nd column containing new names._
 
-extract_fasta_seqs.py - extract sequences from fasta file based on the list provided
+[extract_fasta_seqs.py](extract_fasta_seqs.py) - extract sequences from fasta file based on the list provided
   options: -i input_fasta -o output_fasta -n name_file
