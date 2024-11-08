@@ -32,4 +32,4 @@ if __name__ == "__main__":
 args = parser.parse_args()
 
 # Call the function with provided arguments
-extract_fasta_seqs(args.input, args.output, args.contig)
+extract_fasta_seqs(args.input, args.output, args.names)
