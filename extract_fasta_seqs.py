@@ -5,14 +5,20 @@ Created on Tue Sep 24 12:31:30 2024
 
 @author: glombik
 """
+#add SeqIO, made to handle fasta sequences
 from Bio import SeqIO 
+#add argparse to pass arguments when running the script (see below)
 import argparse
 
-def extract_fasta_seqs(input_file, output_file, list_of_contigs):    
-    with open(list_of_contigs) as file:
+#define a function to extract specified sequences from the fasta file based on known names in the list
+def extract_fasta_seqs(input_file, output_file, list_of_names):    
+    #open the file with name list
+    with open(list_of_names) as file:
         lines1 = [line.strip() for line in file]
+    #open the output file for writing
     with open(output_file,'w') as f:
-        
+
+        #open the fasta input and if the name is found in the name list entry, extract it with the sequence into an output
         with open(input_file) as fasta_in:
             for record in SeqIO.parse(fasta_in,'fasta'):
                 if record.name in lines1:
@@ -31,5 +37,5 @@ if __name__ == "__main__":
 # Parse the arguments
 args = parser.parse_args()
 
-# Call the function with provided arguments
+# Call the function with provided arguments (see above)
 extract_fasta_seqs(args.input, args.output, args.names)
