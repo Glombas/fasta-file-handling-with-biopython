@@ -11,3 +11,5 @@ _Note: the name_file needs to be a tab delimited file with 1st column containing
 
 [extract_fasta_seqs.py](extract_fasta_seqs.py) - extract sequences from fasta file based on the list provided
   options: -i input_fasta -o output_fasta -n name_file
+
+[paths_gfa_to_fasta.py](paths_gfa_to_fasta.py) - extract full paths (segment "P" in the .gfa) from a subgraph/graph for every sample included in the graph.
