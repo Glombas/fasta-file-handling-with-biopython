@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 24 12:31:30 2024
 
-@author: glombik
-"""
 #add SeqIO, made to handle fasta sequences
 from Bio import SeqIO
 #add argparse to pass arguments when running the script (see below)
