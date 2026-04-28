@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 24 12:31:30 2024
 
-@author: glombik
-"""
 
 from Bio import SeqIO
 import argparse
